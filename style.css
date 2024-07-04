@@ -1,0 +1,195 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #470063;
+}
+html, body{
+   width: 100%;
+   height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    background-color: #C0C999;
+}
+.container{
+    background-color: #FD96A9;
+    width: 60vw;
+    height: 80vh;
+    border-radius: 10px;
+    padding: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #B30089;
+}
+h1{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    font-weight: 800;
+    /* letter-spacing: 3px; */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.game_tab{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+.game{
+    background-color: #FD96A9;
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.player_chance{
+    background-color: #FD96A9;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    padding: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+/* ===========Main-Game-Design=========== */
+
+.computer_sign{
+    width: 40%;
+    /* height: 100%; */
+    background-color: transparent;
+    text-align: center;
+    font-weight: 700;
+}
+
+.game_vs_img{
+    background: url(img/Vs_Image.png);
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+}
+
+.player_sign{
+    width: 40%;
+    /* height: 100%; */
+    background-color: transparent;
+    text-align: center;
+    font-weight: 700;
+}
+
+.game_message{
+    background-color: #FD96A9;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reset{
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #470063;
+    color: white;
+}
+.game_comment{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* ===========Player_Chances_tab=========== */
+
+.signs{
+    width: 150px;
+    height: 118px;
+    background-color: transparent;
+    /* border-radius: 50%; */
+}
+
+/* ==============Utils============== */
+
+button{
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 1287px){
+    h1{
+        width: 100%;
+    }
+}
+@media (max-width: 673px){
+    .container{
+        width: 90vw;
+        height: 89vh;
+    }
+}
+@media (max-width: 488px){
+    .game{
+        flex-direction: column;
+    }
+}
+@media (max-width: 443px){
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    .player_sign{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .computer_sign{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .game_comment{
+        font-size: 12px;
+    }
+    .signs{
+        height: 80px;
+    }
+}
+@media (max-height: 600px){
+    .game{
+        height: 70%;
+    }
+    .container{
+        height: 90vh;
+    }
+}
