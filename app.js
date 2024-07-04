@@ -10,7 +10,7 @@ const playerTurn = (turn) =>{
     }else if(turn == "paper"){
         playerSign.src = "img/player_paper.png"
     }else if(turn == "scissor"){
-        playerSign.src = "img/player_scissor.png"
+        playerSign.src = "img/Player_scissor.png"
     }
     playerS = turn;
     setTimeout(()=>{
